@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="style.css">
   <!-- // CDN for jQuery -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <!-- // jQuery -->
-  <script src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <!-- // VanillaJS -->
   <!-- <script src="./scripts/fellowship.js"></script> -->
 </head>
@@ -24,14 +24,15 @@
     <div id="welcomeMessage">
         <h4>Hello and welcome to my resume page! Sit back and relax and take a scroll to see all of the amazing things I have to offer as your next employee!</h4>
     </div>
-    <div id="navBar">
-        <ul>
-            <!-- insert how jquery slide method in js file -->
-            <button>Bio</button>
-            <button>Resume</button>
-            <button>Projects</button>
-        </ul>
-    </div>
+    <nav class="mainNav">
+         <div class="nav">
+             <ul class="navList">
+                 <button class="navBar">Bio</button>
+                 <button class="navBar">Resume</button>
+                 <button class="navBar">Projects</button>
+             </ul>
+         </div>
+    </nav>
     <div id="bio">
         <h1>Biography</h1>
         <h4>Here is a little bit about myself! I went straight into the Navy after highschool. Working onboard sumbarines, I work well in a fast paced, and high stress environment. I have learned to manage my time while consistently meeting all of my deadlines. Communication is part of my work and personal life as I am constantly giving updates on tasks assigned to me as well as providing a friendly ear or suggestion. As a quality assurance inspector of 6 years, I have immaculate attention to detail when it comes to everything I do. I strive for first time quality and excellence in everything I do.</h4>
@@ -65,11 +66,28 @@
 
     </div>
     <div id="projBox1">
-        <a>
-            <img src="harryPotter1.png" id="hPotterPic1"/>
-            <img src="harryPotter2.png" id="hPotterPic2"/>
-            <img src="harryPotter3.png" id="hPotterPic3"/>
-        </a>
+        <!-- HP carousel images -->
+        <div class="container">
+			<!-- =========== CAROUSEL CONTAINER ======== -->
+			<div class="carousel-container">
+				<!-- previous button -->
+				<div class="carousel-button previous">
+					<!-- from linearicons icon font -->
+					<span class="lnr lnr-chevron-left"></span>
+				</div>
+				<!-- images -->
+				<div class="carousel-images">
+					<img src="image/harryPotter1.png" id="hPotterPic1"/>
+					<img src="image/harryPotter2.png" id="hPotterPic2"/>
+					<img src="image/harryPotter3.png" id="hPotterPic3"/>
+				</div>
+				<!-- next button -->
+				<div class="carousel-button next">
+					<!-- from linearicons icon font -->
+					<span class="lnr lnr-chevron-right"></span>
+				</div>
+			</div>
+		</div>
     </div>
     <div id="project1">
         <h3>Harry Potter is a super basic webpage where I was using a combination of JQuery, CSS, HTML, and JavaScript to manipulate items on my page.</h3>
@@ -84,8 +102,8 @@
         <h4>Check my other pages out here!</h4>
     </div>
 
-
-
+<!-- JS here -->
+    <script src="app.js"></script>
 </body>
 
 </html>

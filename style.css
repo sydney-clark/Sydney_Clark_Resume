@@ -51,29 +51,51 @@ body {
     color: white;
 }
 
-#hPotterPic1 {
-    object-fit: scale-down;
-    height: 500px;
-    width: 500px;
+#projBox1 {
     padding-top: 250px;
-    color: white;
+}
+/* ======= CAROUSEL SECTION ======== */
+
+.container {
+    padding: 150px;
+    height: 500px;
+}
+.container > img {
+	width: 50%;
 }
 
-#hPotterPic2 {
-    object-fit: scale-down;
-    height: 500px;
-    width: 500px;
-    color: white;
+.carousel-container {
+	width: 70%;
+	display: flex;
+}
+.carousel-images {
+	width: 80%;
+	padding: 10px;
+}
+.carousel-images img {
+	width: 100%;
+	display: none;
+}
+.carousel-button {
+	align-self: center;
+	background: white;
+    padding: 10px;
+	border-radius: 50%;
+}
+.carousel-button:hover {
+	cursor: pointer;
+	background: rgb(53, 154, 226);
+	color: white;
 }
 
-#hPotterPic3 {
-    object-fit: scale-down;
-    height: 500px;
-    width: 500px;
-    color: white;
+.carousel-images img:first-of-type {
+	display: block;
 }
+
+/* end of carousel */
 
 #project1 {
+    padding-top: 0px;
     color: white;
 }
 
