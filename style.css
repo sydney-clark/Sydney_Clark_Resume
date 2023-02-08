@@ -1,3 +1,54 @@
-h1 {
+body {
+    background-color: black;
+}
+#header {
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+#portPic {
+    object-fit: scale-down;
+    height: 300px;
+    width: 600px;
+}
+
+#welcomeMessage {
+    color: white;
+
+}
+
+#navBar {
+    color: white;
+}
+
+#bio {
+    color: white;
+    text-align: center;
+}
+
+#resume {
+    color: white;
+    text-align: center;
+}
+
+#projBox1 {
+    color: white;
+}
+
+#project1 {
+    color: white;
+}
+
+#proBox2 {
+    color: white;
+}
+
+#project2 {
+    color: white;
+}
+
+#footerLinks {
+    color: white;
     text-align: center;
 }
