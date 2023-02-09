@@ -84,7 +84,14 @@ $('.previous').on('click', () => {
         .children()
         .eq(currentImgIndex2)
         .css('display', 'block');
+
 });
 
+$(document).ready(function(){
+$(".footerButton").click(function(){
+$("#links").slideToggle('slow');
+$("#links2").slideToggle('slow');
+});
+});
 
 });
