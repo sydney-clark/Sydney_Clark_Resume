@@ -3,6 +3,7 @@ body {
 }
 #header {
     text-align: center;
+    font-size: 35px;
     padding: 50px;
     color: white;
 }
@@ -16,6 +17,7 @@ body {
 }
 
 #welcomeMessage {
+    font-size: 25px;
     color: white;
     padding-top: 150px;
     padding-bottom: 50px;
@@ -28,18 +30,21 @@ body {
 }
 
 #bio {
+    font-size: 20px;
     padding-top: 250px;
     color: white;
     text-align: center;
 }
 
 #resume {
+    font-size: 25px;
     padding-top: 250px;
     color: white;
     text-align: center;
 }
 
 #skills {
+    font-size: 20px;
     float: left;
     padding-top: 50px;
     padding-right: 300px;
@@ -47,19 +52,18 @@ body {
 }
 
 #experience {
+    float: right;
+    font-size: 20px;
     padding-top: 50px;
     color: white;
 }
 
 #projBox1 {
-    padding-top: 250px;
+    padding-top: 550px;
 }
-/* ======= CAROUSEL SECTION ======== */
 
-.container {
-    padding: 150px;
-    height: 500px;
-}
+/* ======= HARRY POTTER CAROUSEL SECTION ======== */
+
 .container > img {
 	width: 50%;
 }
@@ -92,18 +96,56 @@ body {
 	display: block;
 }
 
-/* end of carousel */
-
-#project1 {
-    padding-top: 0px;
-    color: white;
-}
+/* ======= END OF HARRY POTTER CAROUSEL SECTION ======== */
 
 #proBox2 {
+    padding-top:250px;
+}
+
+/* ======= LOTR CAROUSEL SECTION ======== */
+
+.container2 > img {
+	width: 50%;
+}
+
+.carousel-container2 {
+	width: 70%;
+	display: flex;
+}
+.carousel-images2 {
+	width: 80%;
+	padding: 10px;
+}
+.carousel-images2 img {
+	width: 100%;
+	display: none;
+}
+.carousel-button2 {
+	align-self: center;
+	background: white;
+    padding: 10px;
+	border-radius: 50%;
+}
+.carousel-button2:hover {
+	cursor: pointer;
+	background: rgb(53, 154, 226);
+	color: white;
+}
+
+.carousel-images2 img:first-of-type {
+	display: block;
+}
+
+/* ======= END OF LOTR CAROUSEL SECTION ======== */
+#project1 {
+    padding-top: 0px;
+    font-size: 20px;
     color: white;
 }
 
 #project2 {
+    padding-top:0px;
+    font-size: 20px;
     color: white;
 }
 

@@ -19,7 +19,7 @@ $(() => { //creating the DOM query
 //     )
 // })
 
-
+//Harry potter carousel
 let currentImgIndex = 0;
 let numOfImages = $('.carousel-images').children().length - 1;
 
@@ -52,5 +52,39 @@ $('.previous').on('click', () => {
         .css('display', 'block');
 
 });
+
+//LOTR carousel
+let currentImgIndex2 = 0;
+let numOfImages2 = $('.carousel-images2').children().length - 1;
+
+$('.next').on('click', () => {
+    $('.carousel-images2').children().eq(currentImgIndex2).css('display', 'none');
+
+    if (currentImgIndex2 < numOfImages2) {
+        currentImgIndex2++;
+    } else {
+        currentImgIndex2 = 0;
+    }
+
+    $('.carousel-images2')
+        .children()
+        .eq(currentImgIndex2)
+        .css('display', 'block');
+
+});
+$('.previous').on('click', () => {
+    $('.carousel-images2').children().eq(currentImgIndex2).css('display', 'none');
+    if (currentImgIndex2 > 0) {
+        currentImgIndex2--;
+    } else {
+        currentImgIndex2 = numOfImages2;
+    }
+
+    $('.carousel-images2')
+        .children()
+        .eq(currentImgIndex2)
+        .css('display', 'block');
+});
+
 
 });
