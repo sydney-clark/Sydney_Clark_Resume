@@ -2,23 +2,6 @@
 
 $(() => { //creating the DOM query
 
-
-//     const $navBtn = $('.navBar')
-// $navBtn.on('click', function () {
-//     $('.nav').css('display', 'block')
-//     $('.nav').on('click', function () {
-//         $('.nav').css("display", 'none')
-//     })
-// })
-
-// $(window).scroll(function () {
-//     if (window.scrollY > 30) {
-//         $navBtn.css("opacity", "0.6")
-//     } else (
-//         $navBtn.css("opacity", "1")
-//     )
-// })
-
 //Harry potter carousel
 let currentImgIndex = 0;
 let numOfImages = $('.carousel-images').children().length - 1;
@@ -57,7 +40,7 @@ $('.previous').on('click', () => {
 let currentImgIndex2 = 0;
 let numOfImages2 = $('.carousel-images2').children().length - 1;
 
-$('.next').on('click', () => {
+$('.next2').on('click', () => {
     $('.carousel-images2').children().eq(currentImgIndex2).css('display', 'none');
 
     if (currentImgIndex2 < numOfImages2) {
@@ -72,7 +55,7 @@ $('.next').on('click', () => {
         .css('display', 'block');
 
 });
-$('.previous').on('click', () => {
+$('.previous2').on('click', () => {
     $('.carousel-images2').children().eq(currentImgIndex2).css('display', 'none');
     if (currentImgIndex2 > 0) {
         currentImgIndex2--;
@@ -86,6 +69,8 @@ $('.previous').on('click', () => {
         .css('display', 'block');
 
 });
+
+//footer slide toggle
 
 $(document).ready(function(){
 $(".footerButton").click(function(){
