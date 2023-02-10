@@ -29,13 +29,25 @@ integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="ano
         <h4>Hello and welcome to my resume page! I am  a software engineer student at General Assembly. Sit back and relax and take a scroll to see all of the amazing things I have to offer as your next employee!</h4>
     </div>
 
-    <nav class="mainNav">
+    <!-- <nav class="mainNav">
         <ul class="navList">
-            <button class="navBar">Bio</button>
-            <button class="navBar">Resume</button>
-            <button class="navBar">Projects</button>
+            <li class="navItem">
+            <button class="navBar" href="#bio">Bio</button>
+            <button class="navBar" href="#resume">Resume</button>
+            <button class="navBar" href="projects">Projects</button>
+        </li>
         </ul>
-    </nav>
+    </nav> -->
+
+    <nav class="mainNav">
+        <div class="navList">
+          <ul class="menu">
+            <li buttonclass="navBar"><a href="#bio">Bio</a></li>
+            <li buttonclass="navBar"><a href="#resume">Resume</a></li>
+            <li buttonclass="navBar"><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
 
     <div id="bio">
         <h1>Biography</h1>
@@ -76,7 +88,9 @@ integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="ano
     <div id="projects">
         <h2>Projects</h2>
     </div>
-
+    <div id="project1">
+        <h3>Harry Potter is a super basic webpage where I was using a combination of JQuery, CSS, HTML, and JavaScript to manipulate items on my page.</h3>
+    </div>
     <div id="projBox1">
         <!-- HP carousel images -->
         <div class="container">
@@ -98,11 +112,12 @@ integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="ano
 					<!-- from linearicons icon font -->
 					<span class="lnr lnr-chevron-right"></span>
 				</div>
-                <div id="project1">
-                    <h3>Harry Potter is a super basic webpage where I was using a combination of JQuery, CSS, HTML, and JavaScript to manipulate items on my page.</h3>
-                </div>
 			</div>
 		</div>
+    </div>
+
+    <div id="project2">
+        <h3 id="lotrText">Lord of the Rings project is an interactive web based story. It tells the story of Frodo going on a journey through dangerous and unforgiving realms to destroy the one ring to rule them all!</h3>
     </div>
 
     <div id="projBox2">
@@ -130,16 +145,9 @@ integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="ano
                         <!-- from linearicons icon font -->
                         <span class="lnr lnr-chevron-right"></span>
                     </div>
-                    <div id="project2">
-                        <h3 id="lotrText">Lord of the Rings project is an interactive web based story. It tells the story of Frodo going on a journey through dangerous and unforgiving realms to destroy the one ring to rule them all!</h3>
-                    </div>
                 </div>
             </div>
         </div>
-
-    <!-- <div id="project2">
-        <h3>Lord of the Rings project is an interactive web based story. It tells the story of Frodo going on a journey through dangerous and unforgiving realms to destroy the one ring to rule them all!</h3>
-    </div> -->
 
     <div id="footerLinks">
         <button class="footerButton">Check my other pages out here!</button>
