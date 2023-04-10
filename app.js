@@ -2,7 +2,7 @@
 
 $(() => { //creating the DOM query
 
-//Harry potter carousel
+//Class Tracker carousel
 let currentImgIndex = 0;
 let numOfImages = $('.carousel-images').children().length - 1;
 
